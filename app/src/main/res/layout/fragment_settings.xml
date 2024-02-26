@@ -1,0 +1,42 @@
+<!-- res/layout/fragment_settings.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    >
+
+    <EditText
+        android:id="@+id/editTextDream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Введите цель"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDream"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Введите ваш вес" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textSize="40sp" />
+</RelativeLayout>
